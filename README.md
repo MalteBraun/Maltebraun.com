@@ -1,7 +1,5 @@
 # Maltebraun.com
 
-# Personal Website
-
 This repository hosts the source code for my personal website, showcasing my portfolio, skills, and professional journey. The site is designed to be clean, responsive, and user-friendly, reflecting my personality and expertise in web development.
 
 ## Features
