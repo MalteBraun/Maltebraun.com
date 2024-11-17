@@ -1,0 +1,150 @@
+/* Retro Vintage Personal Website Stylesheet */
+:root {
+    --primary-color: #4A4A4A;
+    --secondary-color: #FFD700;
+    --background-color: #F0F0F0;
+    --text-color: #333333;
+    --accent-color: #FF6B6B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: 'VT323', monospace;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border: 3px solid var(--primary-color);
+    box-shadow: 8px 8px 0 var(--secondary-color);
+}
+
+.portfolio-item {
+    border: 2px dashed var(--primary-color);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 0 var(--accent-color);
+}
+
+.cta-button,
+.download-button,
+button[type="submit"] {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover,
+.download-button:hover,
+button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 2px solid var(--primary-color);
+    font-family: 'Courier New', monospace;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.social-links a {
+    color: var(--secondary-color);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15) 1px,
+            transparent 1px,
+            transparent 2px
+    );
+    pointer-events: none;
+}
