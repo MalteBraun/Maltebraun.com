@@ -148,3 +148,8 @@ body::before {
     );
     pointer-events: none;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
